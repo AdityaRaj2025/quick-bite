@@ -1,0 +1,15 @@
+node_modules
+.DS_Store
+.env
+.env.local
+.env.*
+dist
+.turbo
+.next
+coverage
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+services/**/drizzle/**/*-journal
+services/**/drizzle/migrations/.snapshot*
+

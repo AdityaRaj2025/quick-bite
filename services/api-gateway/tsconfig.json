@@ -1,0 +1,12 @@
+{
+  "extends": "../../packages/tsconfig/base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "baseUrl": ".",
+    "paths": {
+      "@quick-bite/core": ["../../packages/core/src/index.ts"]
+    }
+  },
+  "include": ["src", "drizzle.config.ts"]
+}
