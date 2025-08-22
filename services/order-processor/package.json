@@ -1,0 +1,29 @@
+{
+  "name": "@quick-bite/order-processor",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@quick-bite/core": "file:../../packages/core",
+    "@quick-bite/shared": "file:../../packages/shared",
+    "@aws-sdk/client-sqs": "^3.0.0",
+    "@aws-sdk/client-sns": "^3.0.0",
+    "zod": "^3.23.8",
+    "fastify": "^4.28.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "typescript": "^5.4.5",
+    "eslint": "^8.57.0",
+    "tsx": "^4.16.2",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.12"
+  }
+}
